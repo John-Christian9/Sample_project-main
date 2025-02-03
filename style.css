@@ -1,0 +1,248 @@
+/* Import Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 200vh; /* For scrolling effect */
+    background: url('img/bg1.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Header styling */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    background: transparent;
+    z-index: 1000;
+}
+
+/* Header content */
+.header-content {
+    width: 1280px;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.logo img {
+    height: 41px;
+}
+
+/* Navigation Menu */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.48px;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+/* Default "Home" Menu Style */
+.menu li a.active {
+    color: orange;
+}
+
+/* Hover Effect */
+.menu li a:hover {
+    color: orange;
+}
+
+/* Scrolled State */
+.scrolled {
+    background: white;
+}
+
+.scrolled .menu li a {
+    color: #333333;
+}
+
+.scrolled .menu li a.active {
+    color: orange;
+}
+
+.scrolled .menu li a:hover {
+    color: orange;
+}
+
+/* Hero Section */
+#hero {
+    height: 919px;
+    background: rgba(51, 51, 51, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+    width: 100%;
+}
+
+.hero-content {
+    max-width: 1280px;
+    width: 100%;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#hero h1 {
+    font-size: 70px;
+    margin-bottom: 27px;
+    color: white; 
+}
+
+.subheadline {
+    font-size: 18px;
+    font-family: 'Lora', serif;
+    margin-bottom: 53px;
+    color: white;
+}
+
+.cta-button {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 50px;
+    text-transform: uppercase;
+    padding: 0 30px;
+    background-color: orange;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    width: 170px;
+    display: inline-block;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #333333;
+}
+
+/* Feature Section */
+#features {
+    padding: 100px 0;
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 1280px;
+    padding: 0 15px;
+    margin: auto;
+}
+
+/* Heading Row */
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.column {
+    width: 50%;
+}
+
+.heading {
+    margin-bottom: 70px !important;
+}
+.heading h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 50px;
+    color: #333333;
+    text-transform: capitalize;
+    margin-bottom: 27px;
+}
+
+.heading p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #999999;
+    margin-bottom: 20px;
+    padding: 0 15px
+}
+
+/* Features Row */
+.features-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -15px;
+}
+
+/* Feature Columns */
+.feature-column {
+    width: 25%;
+    padding: 0 15px;
+    text-align: center;
+}
+
+/* Feature Icon */
+.feature-icon {
+    position: relative;
+    margin-bottom: 34px;
+}
+
+.feature-icon .img {
+    font-size: 50px;
+    line-height: 1;
+}
+
+/* Feature Content */
+.feature-content h3 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
+    color: #333333;
+    text-transform: capitalize;
+    margin-bottom: 13px;
+}
+
+.feature-content p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #999999;
+    margin-bottom: 0;
+    padding: 0 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .column {
+        width: 100%;
+    }
+
+    .feature-column {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .feature-column {
+        width: 100%;
+    }
+}
